@@ -84,7 +84,7 @@
 		"body": [
 			"import WindVane from '@ali/rax-windvane';",
 			"",
-			"WindVane.call('AliHuoYan', 'scan', {}, data => {",
+			"WindVane.call('xx', 'xx', {}, data => {",
 			"  alert(JSON.stringify(data))",
 			"}, err => {",
 			"  alert(JSON.stringify(err));",
@@ -171,5 +171,5 @@
 	"import goldlog": {
 		"prefix": "import goldlog from '@ali/universal-goldlog';",
 		"body": "import goldlog from '@ali/universal-goldlog';"
-	}
+	},
 }

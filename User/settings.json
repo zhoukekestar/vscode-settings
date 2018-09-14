@@ -39,4 +39,5 @@
     "tps.nick": "pipe",
     "java.errors.incompleteClasspath.severity": "ignore",
     "gitlens.historyExplorer.enabled": true,
+    "terminal.integrated.shell.osx": "zsh",
 }
