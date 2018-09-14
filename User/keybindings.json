@@ -1,0 +1,27 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "shift+cmd+t",
+    "command": "vscommands:tools"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.terminal.focusAtIndex1"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.terminal.focusAtIndex2"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.action.terminal.focusAtIndex3"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "extension.upload2tps"
+  }
+]

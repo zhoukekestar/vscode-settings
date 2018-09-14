@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Remove trailing and leading whitespace",
+        "find": [
+            "^[ \\t]+",
+            "[ \\t]+$"
+        ],
+        "replace": ""
+    },
+    // {
+    //   "name": "Transform styles to className",
+    //   "find": [
+    //     "style=\{styles\.(\w*?)\}"
+    //   ],
+    //   "replace": "className='$1'"
+    // },
+    {
+      "name": "Transform styles to className",
+      "find": [
+        "style"
+      ],
+      "replace": "className"
+    }
+]

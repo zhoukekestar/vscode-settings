@@ -1,0 +1,175 @@
+{
+	"rax init": {
+		"prefix": "rax-init",
+		"body": [
+			"import { createElement, Component } from 'rax';",
+			"import View from 'rax-view';",
+			"import Button from 'rax-button';",
+			"import Text from 'rax-text';",
+			"",
+			"class $1 extends Component {",
+			"\tstate = {",
+			"\t};",
+			"",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<View>",
+			"\t\t\t</View>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"export default $1;",
+			"render(<$1 />);"
+		],
+		"description": "init rax"
+	},
+	"cox init": {
+		"prefix": "cox-init",
+		"body": [
+			"import { ",
+			"\tcreateElement, ",
+			"\tComponent, ",
+			"\trender } from '@ali/cox';",
+			"import { ",
+			"\tView, ",
+			"\tText, ",
+			"\tImage as Picture, ",
+			"\tLink, ",
+			"\tButton, ",
+			"\tTouchableHighlight as Touchable,",
+			"\tRefreshControl,",
+			"\tRecyclerView",
+			"} from '@ali/cox-components';",
+			"",
+			"class $1 extends Component {",
+			"\tstate = {",
+			"\t};",
+			"",
+			"\tconstructor(props, ctx) {",
+			"\t\tsuper(props, ctx);",
+			"\t}",
+			"",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<View>",
+			"\t\t\t</View>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"export default $1;"
+		],
+		"description": "init cox"
+	},
+	"express init": {
+		"prefix": "express-init",
+		"body": [
+			"var express = require('express');",
+			"var app = express();",
+			"var bodyParser = require('body-parser');",
+			"",
+			"app.use(bodyParser.json());",
+			"app.use(bodyParser.urlencoded({ extended: true }));",
+			"",
+			"app.all('/', (req, res, next) => {",
+			"  console.log(req.headers);",
+			"  console.log(req.body);",
+			"  res.json({'hello': 'world'});",
+			"});",
+			"",
+			"app.listen(3000);",
+		]
+	},
+	"windvane test": {
+		"prefix": "windvane",
+		"body": [
+			"import WindVane from '@ali/rax-windvane';",
+			"",
+			"WindVane.call('AliHuoYan', 'scan', {}, data => {",
+			"  alert(JSON.stringify(data))",
+			"}, err => {",
+			"  alert(JSON.stringify(err));",
+			"});"
+		],
+		"description": "windvane test"
+	},
+	"reload page": {
+		"prefix": "reload-rax",
+		"body": [
+			"<Button onPress={() => location.reload()}>刷新页面</Button>"
+		],
+		"description": "reload page"
+	},
+	"rax Image": {
+		"prefix": "<Image&uri",
+		"body": [
+			"<Image source={{ uri: \"$1\" }} style={[{ width: $2, height: $3 }, styles.$4]} />"
+		],
+		"description": "rax Image"
+	},
+	"rax Button": {
+		"prefix": "<Button&Text",
+		"body": [
+			"<Button style={styles.$1} onPress={e => null}>",
+			"  <Text style={styles.$2}>$3</Text>",
+			"</Button>"
+		],
+		"description": "rax Button"
+	},
+	"rax View": {
+		"prefix": "<View&Style",
+		"body": [
+			"<View style={styles.$1}>",
+			"  $2",
+			"</View>"
+		],
+		"description": "rax View"
+	},
+	"rax Text": {
+		"prefix": "<Text&Style",
+		"body": [
+			"<Text style={styles.$1}>$2</Text>"
+		],
+		"description": "rax Text"
+	},
+	"style=": {
+		"prefix": "style=",
+		"body": "style={styles.$1}"
+	},
+	"import Toast": {
+		"prefix": "import Toast",
+		"body": "import Toast from 'universal-toast';"
+	},
+	"import WindVane": {
+		"prefix": "import WindVane",
+		"body": "import WindVane from '@ali/universal-windvane';"
+	},
+	"Toast.show": {
+		"prefix": "Toast.show",
+		"body": "Toast.show('$1');"
+	},
+	"WindVane.call": {
+		"prefix": "WindVane.call",
+		"body": [
+			"WindVane.call('WebAppInterface', 'setCustomPageTitle', {",
+			"  title: '设置标题'",
+			"}, ret => {",
+			"  alert(JSON.stringify(ret));",
+			"}, (error) => {",
+			"  alert(JSON.stringify(error))",
+			"});"
+		],
+		"description": "Windvane.call"
+	},
+	"isWeex": {
+		"prefix": "isWeex",
+		"body": "import {isWeex, isWeb, isWidescreen, isDesktop} from '@ali/universal-env';"
+	},
+	"import RecyclerView": {
+		"prefix": "import RecyclerView",
+		"body": "import RecyclerView from 'rax-recyclerview';"
+	},
+	"import goldlog": {
+		"prefix": "import goldlog from '@ali/universal-goldlog';",
+		"body": "import goldlog from '@ali/universal-goldlog';"
+	}
+}

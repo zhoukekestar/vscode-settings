@@ -1,0 +1,42 @@
+{
+    "files.associations": {
+        "*.tpl": "html",
+        "*.xtpl": "html"
+    },
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    // "files.autoSave": "afterDelay",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules/.*@*": true,
+        // "**/node_modules/_*@*": true
+    },
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+
+    "editor.wordWrapColumn": 80,
+
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "tps.empId": "146585",
+    "tps.nick": "pipe",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "gitlens.historyExplorer.enabled": true,
+}
