@@ -1,0 +1,8 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "files.exclude": {
+    "**/app/proxy": true,
+    "**/logs": true,
+    "**/run": true
+  }
+}
